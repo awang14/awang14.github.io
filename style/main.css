@@ -80,8 +80,9 @@ hr {
   transition: .3s background-color;
 }
  
-.navbar a:hover {
-  background-color: #005f5f;
+.nav a:hover {
+  background: #ccc;
+  text-decoration: none;
 }
  
 .nav a.active {
@@ -99,8 +100,6 @@ hr {
     font-size: 1.4em;
   }
  
-  /* Option 1 - Display Inline */
-
     
 #footer {
   position: relative;
@@ -242,7 +241,7 @@ hr {
 }
 
 #home-content a:hover {
-    background: #ec2802;
+    background: #333333;
     text-decoration: none;
 }
 
