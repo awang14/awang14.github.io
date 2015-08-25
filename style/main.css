@@ -1,0 +1,248 @@
+/* Font setup */
+
+
+/**
+ * Removes the need to extra math to account for border width and
+ * padding when calculating the width/height of an element.
+ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Changing an input's placeholder color */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #FFFFFF;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:  #FFFFFF;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:  #FFFFFF;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:  #FFFFFF;
+}
+
+/* Page Structures and Global Styles */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+
+    height: 1px;
+    border: 0;
+    border: #E8E8E8;
+    color: #E8E8E8;
+    background-color: #E8E8E8;
+    margin: 0px;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+} 
+
+.nav ul {
+  list-style-type: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.nav li {
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.navbar a:hover {
+  background-color: #005f5f;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+
+    
+#footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-left: 50px;
+  background-color: #444;
+
+  font-size: 20px;
+  line-height: 75px;
+  color: #fff;
+}
+
+#footer-media {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  bottom: 0;
+  height: relative;
+  background-color: #444;
+}
+
+#footer-media a {
+  text-decoration: none;
+}
+
+#footer-media span {
+  position: relative;
+  background-color: #444;
+  color: #fff;
+  margin: 0px 15px;
+
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+#footer-media span:hover {
+  opacity: 0.4;
+}
+
+#footer-media-email:hover:after {
+  position: absolute;
+  width: auto;
+  height: 20px;
+  left: 68px;
+  bottom: 75px;
+  padding: 0px 15px 40px;
+
+  text-align: right;
+  color: #ec2802;
+  background: #444;
+  font-size: 20px;
+  content: attr(email);
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#footer-media-email:hover:before {
+  position: absolute;
+  left: 208px;
+  bottom: 60px;
+
+  border: solid;
+  border-color: #000 transparent;
+  border-width: 15px 20px 0 20px;
+  content: '';
+}
+
+
+#home-content {
+    width: 100%;
+    height: 1200px;
+    text-align: center;
+    
+}
+
+#home-content img {
+    width: 100%;
+    height: 850px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+    
+#home-content h1 {
+    position:absolute;
+    top: 500px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 64px;
+}
+    
+#home-content table {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#home-content td {
+    position: relative;
+    width: 33%;
+    height: 150px;
+    padding: 60px 50px 0px;
+    font-size: 20px;
+}
+
+
+#home-content h2 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px; 
+}
+
+
+#home-content a {
+    border-radius: 9px;
+    font-family: 'Lato';
+    color: #ffffff;
+    font-size: 16px;
+    background: #000;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transtion: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+#home-content a:hover {
+    background: #ec2802;
+    text-decoration: none;
+}
+
