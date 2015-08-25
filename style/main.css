@@ -249,8 +249,8 @@ hr {
     border-radius: 9px;
     font-family: 'Lato';
     color: #ffffff;
-    font-size: 16px;
-    background: #000;
+    font-size: 18px;
+    background: #585858;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     
@@ -262,7 +262,7 @@ hr {
 }
 
 #home-content a:hover {
-    background: #333333;
+    background: #B8B8B8;
     text-decoration: none;
 }
 
