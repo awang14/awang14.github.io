@@ -72,6 +72,9 @@ hr {
   margin-right: -4px;
 }
 
+.nav li .active {
+  background-color: black;
+}
  
 .nav a {
   text-decoration: none;
@@ -81,7 +84,7 @@ hr {
 }
  
 .nav a:hover {
-  background: #ccc;
+  color: #A8A8A8;
   text-decoration: none;
 }
  
@@ -151,8 +154,8 @@ hr {
   bottom: 75px;
   padding: 0px 15px 40px;
 
-  text-align: right;
-  color: #ec2802;
+  text-align: left;
+  color: #fff;
   background: #444;
   font-size: 20px;
   content: attr(email);
@@ -186,8 +189,6 @@ hr {
 #home-content img {
     width: 100%;
     height: 850px;
-    padding-left: 10px;
-    padding-right: 10px;
     position: relative;
 }
     
@@ -198,6 +199,27 @@ hr {
     width: 100%;
     color: #fff;
     font-size: 64px;
+}
+    
+#home-content .starburst {
+    position: absolute;
+    top: 650px;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    line-height: 0.8;
+}
+   
+#home-content .starburst a {
+    margin-bottom: 0px;
+    color: #fff;
+    background-color: #00CCFF;
+    font-size: 20px;
+}
+    
+#home-content .starburst a:hover {
+    background-color: #00FFFF;
 }
     
 #home-content table {
